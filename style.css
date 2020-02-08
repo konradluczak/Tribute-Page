@@ -21,20 +21,53 @@ body {
 }
 
 .main {
-    background-color: #ff7675;
+    background-color: #f00;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header {
-    height: 95vh;
+    height: 105vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba(116, 186, 255, 0.8),
-        rgba(9, 133, 227, 0.8)),
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)),
         url(/assets/freestocks-org-Gqc1jl2kd1U-unsplash.jpg);
+        /* rgba(116, 186, 255, 0.8),
+        rgba(9, 133, 227, 0.8)), */
         /* Photo by freestocks.org on Unsplash */
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    padding-top: 20px;
+}
+
+.logo-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.logo {
+    height: 130px;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #f00;
+    font-weight: 400;
+}
+
+.title-main {
+    font-size: 50px;
+    display: block;
+}
+
+.title-bottom {
+    font-size: 20px;
+    display: block;
 }
 
 .header img {
