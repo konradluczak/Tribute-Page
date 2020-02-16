@@ -1,76 +1,72 @@
-/* 
-Light blue #74b9ff
-Dark blue #0984e3
-Light red #ff7675
-Dark red #d63031 
-*/
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.7;
-    color: #777;
-    padding: 30px;
-}
-
-.main {
     background-color: #f00;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .header {
-    height: 650px;
+    /* height: 95vh; */
     background-image: linear-gradient(
         to right bottom,
-        rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0.8)),
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)),
         url(/assets/freestocks-org-Gqc1jl2kd1U-unsplash.jpg);
         /* rgba(116, 186, 255, 0.8),
         rgba(9, 133, 227, 0.8)), */
         /* Photo by freestocks.org on Unsplash */
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    padding-top: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo-box {
+.header_logo {
+    height: 8rem;
     position: absolute;
-    top: 50px;
-    left: 50px;
-}
-
-.logo {
-    height: 130px;
+    top: 1rem;
+    left: 6rem;
 }
 
 .title {
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     text-transform: uppercase;
     color: #f00;
     font-weight: 400;
+    padding: 1rem;
 }
 
-.title-main {
-    font-size: 50px;
+.title {
+    font-size: 5rem;
     display: block;
 }
 
-.title-bottom {
-    font-size: 20px;
-    display: block;
+.header_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #f00;
+    margin-bottom: 8rem;
+    position: relative;
 }
 
-.header img {
+.header_image {
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -78,14 +74,14 @@ body {
 
 .tribute-info {
     color: #fff;
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
 }
 
 .timeline-header {
     color: #fff;
     text-align: center;
-    margin: 30px auto;
+    margin: 3rem auto;
 }
 
 .timeline-item, .timeline-description {
@@ -94,20 +90,20 @@ body {
 }
 
 .timeline-description {
-    padding: 0 20px 20px 40px;
+    padding: 0 2rem 2rem 4rem;
 }
 
 .timeline-item {
     /* padding: 20px; */
-    padding-left: 100px;
+    padding-left: 10rem;
 }
 
 .timeline-item::after {
     content: '';
     position: absolute;
-    top: 4px;
-    left: 90px;
-    width: 4px;
+    top: .4rem;
+    left: 9rem;
+    width: .4rem;
     height: 100%;
     background-color: #fff;
 }
@@ -115,34 +111,31 @@ body {
 .timeline-description::after {
     content: '';
     position: absolute;
-    top: 3px;
-    left: -18px;
-    width: 12px;
-    height: 12px;
-    border: 4px solid #fff;
+    top: .3rem;
+    left: -1.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: .4rem solid #fff;
     border-radius: 50%;
     background-color: #f00;
     z-index: 3;
 }
 
+.view_more_section {
+    display: block;
+    text-align: center; 
+    margin: 0 auto;
+    color: #f00;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #fff;
+}
+
 @media only screen and (max-width: 768px) {
-    .title-main {
-        font-size: 28px;
+    html {
+        font-size: 6px;
     }
-    .title-bottom {
-        font-size: 16px;
-    }
-    .logo-box {
-        top: 60px;
-        left: 40px;
-    }
-    .logo {
-        height: 75px;
-    }
-    .timeline-item {
-        padding-left: 40px;
-    }
-    .timeline-item::after {
-        left: 30px;
+    .header_logo {
+        left: 1rem;
     }
 }

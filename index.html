@@ -13,27 +13,23 @@
 
 <body>
     <div id="main" class="main">
-        <div class="header">
-            <div class="logo-box"><img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/POL_COA_Oszyk.svg/148px-POL_COA_Oszyk.svg.png"
-                    alt="Herb Oszyk" class="logo">
-            </div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Henryk_Sienkiewicz.PNG/330px-Henryk_Sienkiewicz.PNG"
-                alt="Henryk Sienkiewicz Portrait" id="image">
-            <h1 id="title" class="title">
-                <span class="title-main">Henryk Sienkiewicz</span>
-                <div id="img-div" class="img-div">
+        <div class="header" id="img-div">
+            <h1 id="title" class="title">Henryk Sienkiewicz</h1>
+            <figure class="header_image_container">
+                <div class="header_logo_box"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/POL_COA_Oszyk.svg/148px-POL_COA_Oszyk.svg.png"
+                        alt="Herb Oszyk" class="header_logo">
                 </div>
-                <span class="title-bottom">"Słowa nie powinny być większe od czynów."</span>
-            </h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Henryk_Sienkiewicz.PNG/330px-Henryk_Sienkiewicz.PNG"
+                    alt="Henryk Sienkiewicz Portrait" id="image" class="header_image">
+                <figcaption id="img-caption" class="header_image_description">Kazimierz Mordasewicz, Portret Henryka
+                    Sienkiewicza, 1899</figcaption>
+            </figure>
 
         </div>
         <div class="text-content">
             <p id="tribute-info" class="tribute-info">
-                Henryk Adam Aleksander Pius Sienkiewicz herbu Oszyk, kryptonim „Litwos”, „Musagetes”, pseudonim „Juliusz
-                Polkowski”, „K. Dobrzyński” (ur. 5 maja 1846 w Woli Okrzejskiej, zm. 15 listopada 1916 w Vevey) – polski
-                nowelista, powieściopisarz i publicysta; laureat Nagrody Nobla w dziedzinie literatury (1905) za
-                całokształt twórczości, jeden z najpopularniejszych polskich pisarzy przełomu XIX i XX w.
+                "Słowa nie powinny być większe od czynów."
             </p>
             <div class="timeline-container">
                 <h2 class="timeline-header">
@@ -62,7 +58,9 @@
                         literaturze – naturalizm. W roku 1878 napisał nowelę Janko Muzykant.</p>
                 </div>
             </div>
-            <a href="https://pl.wikipedia.org/wiki/Henryk_Sienkiewicz" id="tribute-link" target="_blank">Wiev more</a>
+            <a href="https://pl.wikipedia.org/wiki/Henryk_Sienkiewicz" id="tribute-link" target="_blank"
+                class="view_more_section">View more on
+                Wikipedia.</a>
         </div>
     </div>
 </body>
